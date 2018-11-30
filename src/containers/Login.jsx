@@ -27,7 +27,7 @@ class Login extends Component {
 
   render({}, { email, password, message }) {
     return (
-      <form class="container" onSubmit={this.submitForm}>
+      <form className="container" onSubmit={this.submitForm}>
         <p id="login-message">{message}</p>
         <p>
           <label htmlFor="email">Email</label>
