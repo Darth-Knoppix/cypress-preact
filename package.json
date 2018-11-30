@@ -1,0 +1,25 @@
+{
+  "name": "cypress-preact",
+  "version": "1.0.0",
+  "description": "Easy end-to-end testing example with Cypress",
+  "main": "src/index.jsx",
+  "scripts": {
+    "start": "parcel src/index.html",
+    "build": "parcel build src/index.html --no-source-maps --experimental-scope-hoisting",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Seth Corker <seth.corker@gmail.com>",
+  "keywords": ["preact", "cypress", "parcel"],
+  "license": "ISC",
+  "devDependencies": {
+    "@babel/core": "^7.1.6",
+    "@babel/plugin-proposal-class-properties": "^7.1.0",
+    "cypress": "^3.1.2",
+    "parcel": "^1.10.3"
+  },
+  "dependencies": {
+    "hiq": "^2.6.2",
+    "preact": "^8.3.1",
+    "preact-router": "^2.6.1"
+  }
+}
