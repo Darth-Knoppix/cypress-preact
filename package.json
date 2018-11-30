@@ -12,7 +12,7 @@
   },
   "author": "Seth Corker <seth.corker@gmail.com>",
   "keywords": [
-    "preact",
+    "react",
     "cypress",
     "parcel"
   ],
@@ -22,11 +22,13 @@
     "@babel/plugin-proposal-class-properties": "^7.1.0",
     "cypress": "^3.1.2",
     "express": "^4.16.4",
-    "parcel": "^1.10.3"
+    "parcel": "^1.10.3",
+    "react": "^16.6.3",
+    "react-router": "^4.3.1"
   },
   "dependencies": {
     "hiq": "^2.6.2",
-    "preact": "^8.3.1",
-    "preact-router": "^2.6.1"
+    "react-dom": "^16.6.3",
+    "react-router-dom": "^4.3.1"
   }
 }

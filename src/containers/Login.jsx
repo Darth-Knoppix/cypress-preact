@@ -1,8 +1,11 @@
-import { h, Component } from "preact";
-import { route } from "preact-router";
+import React, { Component } from "react";
 import Auth from "../services/auth";
 
 class Login extends Component {
+  state = {
+
+  }
+
   updateEmail = e => {
     this.setState({ email: e.target.value });
   };
@@ -19,15 +22,16 @@ class Login extends Component {
     if (Auth.login(this.state.email, this.state.password)) {
       this.props.onLogin();
 
-      route("/user/profile", true);
+      this.props.history.push("/user/profile");
     } else {
       this.setState({ message: "Login failed" });
     }
   };
 
-  render({}, { email, password, message }) {
+  render() {
+    const { email, password, message } = this.state;
     return (
-      <form class="container" onSubmit={this.submitForm}>
+      <form className="container" onSubmit={this.submitForm}>
         <p id="login-message">{message}</p>
         <p>
           <label htmlFor="email">Email</label>
@@ -36,7 +40,7 @@ class Login extends Component {
             type="email"
             name="email"
             id="email"
-            accesskey="1"
+            accessKey="1"
             value={email}
             onChange={this.updateEmail}
           />
@@ -48,7 +52,7 @@ class Login extends Component {
             type="password"
             name="password"
             id="password"
-            accesskey="2"
+            accessKey="2"
             value={password}
             onChange={this.updatePassword}
           />
