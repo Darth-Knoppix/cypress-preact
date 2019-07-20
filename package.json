@@ -20,9 +20,9 @@
   "devDependencies": {
     "@babel/core": "^7.1.6",
     "@babel/plugin-proposal-class-properties": "^7.1.0",
-    "cypress": "^3.1.2",
+    "cypress": "^3.4.0",
     "express": "^4.16.4",
-    "parcel": "^1.10.3"
+    "parcel": "^1.12.3"
   },
   "dependencies": {
     "compression": "^1.7.3",
