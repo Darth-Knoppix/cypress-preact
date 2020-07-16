@@ -24,7 +24,7 @@
     "express": "^4.16.4",
     "parcel": "^1.12.3",
     "mem": ">=4.0.0",
-    "lodash": ">=4.17.12"
+    "lodash": ">=4.17.19"
   },
   "dependencies": {
     "compression": "^1.7.3",
